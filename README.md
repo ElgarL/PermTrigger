@@ -4,7 +4,7 @@ A plug-in for Spigot that triggers commands based upon permssion assignments.
 ---
 This plug-in allows you to define commands to be executed at the console when a specific permission is added or removed from a player.
 
-It will work without a permission plugin but performs better with Groupmanager 2.6+ or LuckPerms 5.1+.
+It will work without a permission plugin but performs better with [Groupmanager 2.6+](https://github.com/ElgarL/GroupManager/releases) or LuckPerms 5.1+.
 
 After first run it will create a demo perm_triggers.json in the plugin/PermTriggers/ folder.
 
