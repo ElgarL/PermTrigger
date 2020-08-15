@@ -1,0 +1,10 @@
+data:
+    # Acceptable entries are (HTTP or JSON)
+    type: JSON
+    URL: http://example.site/perm_triggers.json
+    
+    # If refresh is enabled the plugin will attempt to reload
+    # the triggers at an interval of minutes as specified below.
+    refresh:
+        enabled: true
+        interval: 60

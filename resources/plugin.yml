@@ -1,0 +1,23 @@
+name: PermTrigger
+main: com.palmergames.spigot.permtrigger.PermTrigger
+version: ${project.version}
+api-version: ${project.bukkitAPIVersion}
+
+author: ElgarL
+website: http://palmergames.com
+
+description: >
+    Trigger commands based upon permission states
+
+softdepend: [GroupManager,LuckPerms]
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Commands                       | #
+# +------------------------------------------------------+ #
+############################################################
+
+commands:
+    ptreload:
+        permission: pt.command.reload
+        default: op

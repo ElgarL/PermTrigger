@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.palmergames.spigot.permtrigger</groupId>
+	<artifactId>PermTrigger</artifactId>
+	<version>1.0.0</version>
+	<description>Trigger commands based upon permission states</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.bukkitAPIVersion>1.14</project.bukkitAPIVersion>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jar.finalName>${project.name}</jar.finalName>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
+			<id>CodeMC</id>
+			<url>https://repo.codemc.org/repository/maven-public</url>
+		</repository>
+		<repository>
+			<id>apache</id>
+			<url>https://maven.apache.org/</url>
+		</repository>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!--Bukkit/Spigot API -->
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.16.2-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<!--GroupManager API -->
+		<dependency>
+			<groupId>com.github.ElgarL</groupId>
+			<artifactId>groupmanager</artifactId>
+			<version>2.5</version>
+		</dependency>
+		<!--LuckPerms API -->
+		<dependency>
+			<groupId>net.luckperms</groupId>
+			<artifactId>api</artifactId>
+			<version>5.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- bStats -->
+		<dependency>
+			<groupId>org.bstats</groupId>
+			<artifactId>bstats-bukkit</artifactId>
+			<version>1.7</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<defaultGoal>clean package</defaultGoal>
+		<sourceDirectory>src</sourceDirectory>
+		<resources>
+			<!-- Include all resources -->
+			<resource>
+				<directory>resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>*.yml</include>
+					<include>*.txt</include>
+					<include>*.json</include>
+					<include>*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
+</project>

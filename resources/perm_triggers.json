@@ -1,0 +1,39 @@
+# This file contains permission triggers.
+# 
+# Triggers are sets of commands to be issue at the console
+# when a permission is added to, or removed from a player.
+# 
+# Commands can have prefixes to perform specific tasks.
+# '#broadcast' '#tell'
+{
+  "player.creative": {
+    "added": [
+      "gamemode creative {player}",
+      "#broadcast {player} has become enlightened!"
+    ],
+    "removed": [
+      "gamemode survival {player}",
+      "#broadcast {player} has equipped leaded boots."
+    ]
+  },
+  "player.speed": {
+    "added": [
+      "effect give {player} speed 1700 5 true",
+	  "effect give {player} haste 1700 3 true",
+      "#tell You have become fast!"
+    ],
+    "removed": [
+      "effect clear {player} speed",
+	  "effect clear {player} haste",
+      "#tell Slow down speedy!"
+    ]
+  },
+  "player.op": {
+    "added": [
+      "op {player}"
+    ],
+    "removed": [
+      "deop {player}"
+    ]
+  }
+}
