@@ -1,4 +1,4 @@
-# PermTrigger [Bukkit/Spigot](https://www.spigotmc.org/resources/PermTrigger/).
+# PermTrigger [Bukkit/Spigot](https://www.spigotmc.org/resources/PermTrigger.82779/).
 A plug-in for Spigot that triggers commands based upon permssion assignments.
 
 **Bug reports**  
