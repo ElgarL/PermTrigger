@@ -84,6 +84,12 @@ public class Json extends IOBase {
 		return parse(data);
 	}
 	
+	/**
+	 * Process the data and attempt to extract any triggers we find.
+	 * 
+	 * @param data	String containing valid Json data.
+	 * @return	true if we successfully loaded triggers from the data.
+	 */
 	protected boolean parse(String data) {
 		
 		Set<TriggerNode> triggers = new CopyOnWriteArraySet<TriggerNode>();
@@ -142,6 +148,9 @@ public class Json extends IOBase {
 		}
 	}
 
+	/**
+	 * Save the currently loaded triggers to Json file.(Unused).
+	 */
 	@Override
 	protected boolean save() {
 		
@@ -192,7 +201,7 @@ public class Json extends IOBase {
 		}
 		
 		/*
-		 * Write a formatted string to be human readable.
+		 * Generate a formatted string to be human readable.
 		 */
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		return gson.toJson(list).toString();

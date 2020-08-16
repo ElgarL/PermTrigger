@@ -90,12 +90,4 @@ public class Http extends Json {
 
 		return false;
 	}
-	
-	@Override
-	protected boolean save() {
-		
-		getLogger().warning("ERROR: A save was attempted while in HTTP mode!");
-		
-		return true;
-	}
 }
