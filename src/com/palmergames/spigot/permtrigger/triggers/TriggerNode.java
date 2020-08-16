@@ -120,11 +120,22 @@ public class TriggerNode {
 		removed.add(command);
 	}
 	
+	/**
+	 * Set the forced state.
+	 * 
+	 * @param forced	true if forced
+	 */
 	public void setForced(boolean forced) {
 		
 		this.forced = forced;
 	}
 	
+	/**
+	 * Is this trigger to be checked and state
+	 * enforced upon every permission update?
+	 * 
+	 * @return	true if forced.
+	 */
 	public boolean isForced() {
 		
 		return forced;
