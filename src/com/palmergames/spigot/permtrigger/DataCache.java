@@ -104,7 +104,7 @@ public class DataCache {
 		PersistentDataContainer container = player.getPersistentDataContainer();
 		
 		for (NamespacedKey keys : container.getKeys()) {
-			if (!triggers.contains(keys.getKey())) {
+			if (!triggers.contains(keys.getKey()) && keys.getNamespace().equalsIgnoreCase(plugin.getName())) {
 				plugin.getLogger().warning(String.format("Unknown trigger removed! %s.", keys.getKey()));
 				container.remove(keys);
 			}

@@ -6,7 +6,7 @@
 
 	<groupId>com.palmergames.spigot.permtrigger</groupId>
 	<artifactId>PermTrigger</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Trigger commands based upon permission states</description>
 
 	<properties>
