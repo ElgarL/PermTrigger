@@ -68,7 +68,7 @@
 
 	<build>
 		<defaultGoal>clean package</defaultGoal>
-		<sourceDirectory>src/main</sourceDirectory>
+		<sourceDirectory>src</sourceDirectory>
 		<resources>
 			<!-- Include all resources -->
 			<resource>
